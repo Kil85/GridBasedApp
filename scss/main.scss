@@ -1,0 +1,8 @@
+@use "./sizes/index" as size;
+@use "./utilities/index" as utiles;
+
+body {
+	font-family: "Cinzel", serif;
+	font-family: "Raleway", sans-serif;
+	background-color: utiles.$dark;
+}
