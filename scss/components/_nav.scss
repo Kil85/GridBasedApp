@@ -1,0 +1,44 @@
+@use "../utilities/index" as utiles;
+
+.nav {
+	&-mobile {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: utiles.$white;
+		transition: transform 0.3s;
+		transform: translateX(-102%);
+		z-index: 10;
+
+		&--active {
+			transform: translateX(0);
+		}
+	}
+
+	&-desctop {
+		display: none;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin: 0.5em;
+		padding: 0.5em;
+		font-size: 2.3rem;
+		color: utiles.$darker;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:hover {
+			color: utiles.$gold;
+		}
+
+	}
+}

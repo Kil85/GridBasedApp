@@ -1,0 +1,16 @@
+@use "../utilities/index" as utiles;
+
+
+.hamburger {
+	position: absolute;
+	top: 3em;
+	left: 1em;
+	transform: translateY(-50%);
+	z-index: 500;
+
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: utiles.$white;
+	}
+}
