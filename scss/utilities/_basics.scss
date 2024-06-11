@@ -1,4 +1,4 @@
-@use '../utilities/colors' as colors;
+@use "../utilities/colors" as colors;
 
 *,
 *::before,
@@ -19,10 +19,30 @@ body {
 	color: colors.$white;
 }
 
-
-
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
+}
+
+.section-title {
+	position: relative;
+	margin: 0 auto 2em;
+	font-size: 3.2rem;
+	color: colors.$gold;
+	font-weight: 200;
+	width: fit-content;
+
+	&::before {
+		position: absolute;
+		bottom: -0.1em;
+		left: 0;
+		width: 40px;
+		height: 2px;
+		background-color: colors.$gold;
+		content: "";
+	}
+	span {
+		font-weight: 900;
+	}
 }

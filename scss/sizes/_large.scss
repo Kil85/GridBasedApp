@@ -1,6 +1,16 @@
 @use "../utilities/index" as utiles;
 
 @media (min-width: 992px) {
+
+
+	.section-title {
+		font-size: 4.8rem;
+
+		&::before{
+			height: 4px;
+		}
+	}
+
 	.header {
 		grid-template-rows: auto repeat(2, 1fr);
 
@@ -20,6 +30,7 @@
 		&__img {
 			grid-row: 1/4;
 			grid-column: 2/3;
+			background-image: url("../../img/header-big.jpg");
 		}
 
 		&__arrow {
