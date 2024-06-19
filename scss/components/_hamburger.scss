@@ -1,8 +1,7 @@
 @use "../utilities/index" as utiles;
 
-
 .hamburger {
-	position: absolute;
+	position: fixed;
 	top: 3em;
 	left: 1em;
 	transform: translateY(-50%);
